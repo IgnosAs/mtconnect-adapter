@@ -72,7 +72,7 @@ void FanucAdapter::initialize(int aArgc, const char *aArgv[])
   }
   
   FILE *fp = fopen(iniFile, "r");
-  printf("FP = %d, %x\n", errno, fp);
+  printf("FP = %d, %p\n", errno, fp);
   if (fp != 0) fclose(fp);
 
   configMacrosAndPMC(iniFile);
@@ -397,7 +397,7 @@ void FanucAdapter::getMessages()
   if (ret == EW_OK && messages->datano != -1)
   {
     char buf[32];
-    sprintf(buf, "%04", messages->datano);
+    sprintf(buf, "%04d", messages->datano);
     mMessage.setValue(messages->data, buf);
   }
 }
