@@ -182,7 +182,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>..\Fwlib\Fwlib32.lib;wsock32.lib;..\Fwlib\fwlib30i.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\Fwlib\Fwlib32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
