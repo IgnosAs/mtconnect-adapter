@@ -28,6 +28,7 @@ steps:
       fwlib\*.dll
       fanuc\adapter.ini
       fanuc\fanuc.xml
+      README.md
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     flattenFolders: true
 
