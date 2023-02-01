@@ -32,3 +32,5 @@ Otherwise to run the adapter directly use
 
 To install as a service use
 `fanuc.exe install [<machine ip> <machine port> <adapter port> | <adapter ini file>]`
+
+If the configured ini file (or the default `adapter.ini` exists, it will always be read it seems)
