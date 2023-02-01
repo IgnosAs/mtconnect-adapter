@@ -25,3 +25,9 @@ steps:
   inputs:
     Contents: '**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb) fwlib\*.dll fanuc\adapter.ini fanuc\fanuc.xml'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
