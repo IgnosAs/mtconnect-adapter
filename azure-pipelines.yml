@@ -29,6 +29,7 @@ steps:
       fanuc\adapter.ini
       fanuc\fanuc.xml
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    flattenFolders: true
 
 - task: PublishBuildArtifacts@1
   inputs:
