@@ -45,6 +45,7 @@
 
 #define SHUT_RDWR SD_BOTH
 typedef int socklen_t;
+#if _MSC_VER < 1900
 #define snprintf _snprintf
 #define strdup _strdup
 #define stricmp _stricmp
@@ -57,6 +58,7 @@ typedef unsigned int uint32_t;
 typedef unsigned __int64 uint64_t;
 
 #define UINT16_MAX 0xFFFF
+#endif
 
 #define sleep(t) Sleep(t * 1000)
 #define usleep(t) Sleep(t / 1000)
